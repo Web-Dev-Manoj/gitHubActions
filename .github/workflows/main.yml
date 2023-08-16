@@ -1,0 +1,12 @@
+name: Hello world
+on:
+  push:
+    branches:
+      - external-pr-merge  # Trigger the scan when merging from this branch to main
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: echo "Hello World!"
