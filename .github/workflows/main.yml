@@ -9,8 +9,10 @@ on:
     branches:
       - external-pr-merge
     types:
-      - opened
-      - synchronize
+      - closed
+  push:
+    branches:
+      - main
 
 jobs:
   my-job:
