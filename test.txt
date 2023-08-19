@@ -4,3 +4,4 @@ Adding this line, Inorder to test the Merging scenario.
 Adding this 2nd line, In order to test pr scenario.
 
 Testing pr.
+Testing pr-synchronize and open.
