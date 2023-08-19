@@ -1,8 +1,16 @@
 name: Hello world
+# on:
+#   push:
+#     branches:
+#       - external-pr-merge  # Trigger the scan when merging from this branch to main
+
 on:
-  push:
+  pull_request:
     branches:
-      - external-pr-merge  # Trigger the scan when merging from this branch to main
+      - external-pr-merge
+    types:
+      - opened
+      - synchronize
 
 jobs:
   my-job:
